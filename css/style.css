@@ -1,0 +1,304 @@
+:root
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    overflow-y: hidden;
+}
+
+#btnUp
+{
+position: fixed;
+bottom: 30px;
+right: 20px;
+z-index: 999;
+display: none;
+}
+
+#loading
+{
+    background-color: #2196f3;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    z-index: 999999999999999999999999999;
+}
+
+
+.sk-folding-cube {
+    margin: 280px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+  }
+  
+  .sk-folding-cube .sk-cube {
+    float: left;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1); 
+  }
+  .sk-folding-cube .sk-cube:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+            animation: sk-foldCubeAngle 2.4s infinite linear both;
+    -webkit-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+  .sk-folding-cube .sk-cube2 {
+    -webkit-transform: scale(1.1) rotateZ(90deg);
+            transform: scale(1.1) rotateZ(90deg);
+  }
+  .sk-folding-cube .sk-cube3 {
+    -webkit-transform: scale(1.1) rotateZ(180deg);
+            transform: scale(1.1) rotateZ(180deg);
+  }
+  .sk-folding-cube .sk-cube4 {
+    -webkit-transform: scale(1.1) rotateZ(270deg);
+            transform: scale(1.1) rotateZ(270deg);
+  }
+  .sk-folding-cube .sk-cube2:before {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  .sk-folding-cube .sk-cube3:before {
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s; 
+  }
+  .sk-folding-cube .sk-cube4:before {
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+  }
+  @-webkit-keyframes sk-foldCubeAngle {
+    0%, 10% {
+      -webkit-transform: perspective(140px) rotateX(-180deg);
+              transform: perspective(140px) rotateX(-180deg);
+      opacity: 0; 
+    } 25%, 75% {
+      -webkit-transform: perspective(140px) rotateX(0deg);
+              transform: perspective(140px) rotateX(0deg);
+      opacity: 1; 
+    } 90%, 100% {
+      -webkit-transform: perspective(140px) rotateY(180deg);
+              transform: perspective(140px) rotateY(180deg);
+      opacity: 0; 
+    } 
+  }
+  
+  @keyframes sk-foldCubeAngle {
+    0%, 10% {
+      -webkit-transform: perspective(140px) rotateX(-180deg);
+              transform: perspective(140px) rotateX(-180deg);
+      opacity: 0; 
+    } 25%, 75% {
+      -webkit-transform: perspective(140px) rotateX(0deg);
+              transform: perspective(140px) rotateX(0deg);
+      opacity: 1; 
+    } 90%, 100% {
+      -webkit-transform: perspective(140px) rotateY(180deg);
+              transform: perspective(140px) rotateY(180deg);
+      opacity: 0; 
+    }
+  }
+
+
+
+
+
+
+
+
+.bg-main
+{
+    background-color: #2196f3;
+}
+
+#home
+{
+    background-image: url(../images/events-heavenly-header.jpg);
+    height: 660px;
+    width: 100%;
+    background-position:center center ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.home-overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(214, 46, 51 , 0.6);
+    color: white;
+}
+.sideMenu
+{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 100, 0.5);
+    padding-top: 60px;
+    z-index: 9999999;
+    overflow-x: hidden;
+    width: 0;
+}
+.sideMenu a
+{
+    display: block;
+    padding: 20px 8px 20px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    transition: color 0.5s;
+}
+.sideMenu a:hover
+{
+    color: red;
+}
+.home-content
+{
+    padding: 16px;
+    margin-left: 0px;
+}
+.home-content h2
+{
+    font-size: 60px;
+    text-align: center;
+}
+.home-content p
+{
+    font-size: 14px;
+    text-align: center;
+}
+.openNav
+{
+    position: absolute;
+    left: 0;
+
+}
+ .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* ! second section */
+#sliderDown
+{
+    width: 50%;
+    margin: 100px auto;
+}
+
+#sliderDown .toggle
+{
+    background-color: rgba(214, 46, 51 , 0.6);
+    padding: 12px ;
+    color: azure;
+    cursor: pointer;
+    margin: 0;
+}
+#sliderDown .innerSlide
+{
+    padding: 12px;
+    background-color: #ccc;
+    display: none;
+}
+
+/* * counter section  */
+#count
+{
+    background-image: url(../images/invitation-2508607__340.jpg);
+    position: relative;
+    background-position: center center;
+    background-size: 100% 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+}
+.countOverlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(214, 46, 51 , 0.6);
+    width: 100%;
+    height: 100%;
+}
+.countOverlay .container
+{
+    padding: 100px 0px;
+}
+.time
+{
+    padding: 50px;
+    border: 1px solid #FFF;
+    font-size: 32px;
+}
+.contactHeader h3
+{
+    font-size: 35px;
+    line-height: 39px;
+    font-weight: 700;
+}
+.contact-info h3
+{
+    font-size: 18px;
+}
+.social-items
+{
+    margin-top: 60px;
+    color: #777;
+}
+.social-items i
+{
+    margin-right: 12px;
+    border: 1px solid #888;
+    width: 50px;
+    height: 50px;
+    line-height: 42px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+.social-items i:hover
+{
+    background-color: red;
+    color: white;
+    border:1px solid #D62E33;
+    font-size: 17px;
+}
+form textarea
+{
+    height: 200px;
+    resize: none;    
+}
+.progress
+{
+    background-color: #2196f3;
+    height: 5px;
+    width: 0px;
+    display: block;
+    position: relative;
+    top: -2px;
+    transition: 0.5s;
+}
